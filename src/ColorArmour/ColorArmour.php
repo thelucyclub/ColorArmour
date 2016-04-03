@@ -119,7 +119,8 @@ public function onCommand(CommandSender $player, Command $cmd, $label, array $ar
 		{
 			$rank = $config->get($player->getName());
 		}
-		$event->setFormat($rank . TextFormat::WHITE . $player->getName() . " §d:§f " . $message);
+		$event->setCanceled;
+		}
 	}
 	
 }
